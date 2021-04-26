@@ -1,4 +1,5 @@
 import axios, { AxiosRequestConfig } from "axios";
+import { API_METHODS } from '../common/enums';
 // import { store } from "../in dex";
 // import { SET_ERROR } from "../actions/types";
 
@@ -45,15 +46,16 @@ axiosRequest.interceptors.response.use(
   }
 );
 
-const makeRequest = async (method : string, url : string, params : Map<string, any>, config : AxiosRequestConfig) => {
+
+const makeRequest = async (method : API_METHODS, url : string, params : Map<string, any>, config : AxiosRequestConfig) => {
   switch (method) {
-    case "POST": {
+    case API_METHODS.POST: {
       return await axiosRequest.post(url, params, config);
     }
-    case "PUT": {
+    case API_METHODS.PUT: {
       return await axiosRequest.put(url, params, config);
     }
-    case "GET": {
+    case API_METHODS.GET: {
       return await axiosRequest.get(url, config);
     }
     default: {
