@@ -1,5 +1,5 @@
 
-export const enum API_METHODS {
+export enum API_METHODS {
     GET,
     POST,
     PUT,

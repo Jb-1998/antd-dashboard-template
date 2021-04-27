@@ -1,24 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useHistory } from "react-router-dom";
 import { useForm } from "react-hook-form";
-
-type Inputs = {
-  email: string,
-  password: string,
-};
+import { AuthInputs } from './types';
+import { useAppSelector, useAppDispatch } from '../../redux/hooks';
+import { login, selectAuthState } from '../auth/authSlice';   
 
 const Login = () => {
     const history = useHistory();
+    const dispatch = useAppDispatch();
+    const authState = useAppSelector(selectAuthState);
 
-    const { register, handleSubmit, watch, formState: { errors } } = useForm<Inputs>();
+    const { register, handleSubmit, watch, formState: { errors } } = useForm<AuthInputs>();
     const onSubmit = (data : any) => {
         console.log(data)
         // login redux action
-        // dispatch(login(data));
+        dispatch(login(data, history));
     };
-  
-    console.log(watch("email")) // watch input value by passing the name of it
-  
+
+    // console.log(watch("email")) // watch input value by passing the name of it
+
     return (
       /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
       <form onSubmit={handleSubmit(onSubmit)}>
