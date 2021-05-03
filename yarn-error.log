@@ -1,0 +1,63 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js run start
+
+PATH: 
+  C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python27\;C:\Python27\Scripts;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\libnvvp;C:\ProgramData\Boxstarter;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\chocolatey\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\jb\AppData\Roaming\Python\Python37\Scripts;C:\Users\jb\Anaconda3\;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\lib\x64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-12.0.1;C:\Python36;C:\Python36\Scripts;C:\Users\jb\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\jb\AppData\Local\Programs\Python\Python36\;C:\Ruby27-x64\bin;C:\Users\jb\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\jb\AppData\Local\Programs\Python\Python37\;C:\Users\jb\AppData\Local\Microsoft\WindowsApps;C:\Users\jb\AppData\Local\Microsoft\WindowsApps;C:\php;C:\Users\jb\AppData\Local\Android\Sdk\platform-tools;C:\Users\jb\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jb\AppData\Local\Yarn\bin;C:\Users\jb\AppData\Roaming\npm;D:\Program Files\google_cloud_sql\google-cloud-sdk\bin
+
+Yarn version: 
+  1.19.2
+
+Node version: 
+  12.18.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: D:\react-typescript-starter\package.json: Unexpected token } in JSON at position 306
+      at JSON.parse (<anonymous>)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Program Files (x86)\Yarn\lib\cli.js:304:30)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "cra-template-typescript-react-typescript-starter",
+    "version": "0.1.0",
+    "keywords": [
+      "react",
+      "create-react-app",
+      "template",
+      "typescript"
+    ],
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+    },  
+    "description": "The React Redux Starter Template with TypeScript.",
+    "repository": {
+      "type": "git",
+      "url": "https://gitlab.com/royce.chua/react-typescript-starter.git",
+      "directory": "packages/cra-template-typescript"
+    },
+    "license": "MIT",
+    "engines": {
+      "node": ">=10"
+    },
+    "files": [
+      "template",
+      "template.json"
+    ],
+    "dependencies": {
+      "antd": "^4.15.3",
+      "react-router-dom": "^5.2.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
